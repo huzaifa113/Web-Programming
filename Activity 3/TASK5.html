@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <script>
+    // Prompt user for a number
+    var userNumber = prompt("Enter a number:");
+  
+    // Print the multiplication table  
+    document.write(`<h2>Multiplication Table for ${userNumber}</h2>`);
+    for (let i = 1; i <= 10; i++) {
+      var result = userNumber * i;
+      document.write(`${userNumber} x ${i} = ${result}<br>`);
+    }
+    
+  </script>
+  
+</body>
+</html>
+

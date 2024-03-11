@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <title> Sign Up </title>
+  <script>
+    function validateForm() {
+      var name = document.getElementById('1').value;
+      var username = document.getElementById('2').value;
+      var password = document.getElementById('3').value;
+      var number = document.getElementById('4').value;
+      var email = document.getElementById('5').value;
+      var gender = document.getElementById('6').value;
+      var dob = document.getElementById('7').value;
+      var zipCode = document.getElementById('8').value;
+      var country = document.getElementById('9').value;
+
+      // Check if all required fields are filled
+      if (name === '' || username === '' || password === '' || number === '' || email === '' || gender === '' || dob === '' || zipCode === '' || country === '') {
+        alert('All fields must be filled out');
+        return false;
+      }
+
+      // Validate name 
+      var namePattern = /^[a-zA-Z\s]*$/;
+      if (!namePattern.test(name)) {
+        alert('Name can only contain alphabets and spaces');
+        return false;
+      }
+
+      // Validate username 
+      if (/^\d+$/.test(username)) {
+        alert('Username cannot contain only numeric values');
+        return false;
+      }
+
+      var usernamePattern = /^[a-zA-Z0-9_]{3,}$/;
+      if (!usernamePattern.test(username)) {
+        alert('Username must be alphanumeric and at least 3 characters long');
+        return false;
+      }
+
+      // Validate strong password (at least 8 characters with a mix of uppercase, lowercase, and numbers)
+      var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+      if (!passwordPattern.test(password)) {
+        alert('Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number');
+        return false;
+      }
+
+      // Validate phone number
+      if (isNaN(number)) {
+        alert('Please enter a valid phone number');
+        return false;
+      }
+
+      // Validate email format 
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address');
+        return false;
+      }
+
+      // Validate date format (YYYY-MM-DD)
+      var dobPattern = /^\d{4}-\d{2}-\d{2}$/;
+      if (!dobPattern.test(dob)) {
+        alert('Please enter a valid date of birth in the format YYYY-MM-DD');
+        return false;
+      }
+
+      // Validate numeric input for zip code
+      if (isNaN(zipCode)) {
+        alert('Zip Code must be numeric');
+        return false;
+      }
+
+      // Validate alphabetic input for country
+      if (!/^[a-zA-Z\s]+$/.test(country)) {
+        alert('Country should only contain alphabets');
+        return false;
+      }
+
+      // Validate gender 
+      var genderPattern = /^[a-zA-Z]+$/;
+      if (!genderPattern.test(gender)) {
+        alert('Gender should only contain alphabets');
+        return false;
+      }
+
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="login-page">
+    <div class="form">
+      <div class="login">
+        <div class="login-header">
+          <h3>SIGN UP</h3>
+          <p>Please enter your credentials to SignUp.</p>
+        </div>
+      </div>
+      <form class="login-form" onsubmit="return validateForm()">
+        <input type="text" name="name" id="1" value="" placeholder="Enter Name*" required><br><br>
+        <input type="text" name="username" id="2" value="" placeholder="Enter Username*" required> <br><br>
+        <input type="password" name="pwd" id="3" value="" placeholder="Enter Password*" required>  <br><br>
+        <input type="text" name="Number" id="4" value="" placeholder="Enter Phone Number*" required><br><br>
+        <input type="text" name="Email" id="5" value="" placeholder="Enter Email*" required> <br><br>
+        <input type="text" name="gender" id="6" placeholder="Enter Gender*" required><br><br>
+        <input type="date" name="DOB" id="7" value="" placeholder="Enter DOB*" required> <br><br>
+        <input type="number" name="Zip Code" id="8" value="" placeholder="Enter Zip Code*" required> <br><br>
+        <input type="text" name="Country" id="9" value="" placeholder="Enter Country*" required> <br><br>
+        <button type="submit">Sign Up</button>
+        <p class="message">Already registered? <a href="file:///C:/Users/Huzaifa/Desktop/signin.html">Log In Here</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
