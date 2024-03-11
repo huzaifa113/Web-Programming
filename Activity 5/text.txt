@@ -1,1 +1,6 @@
-ggwfghregregthtr
+git init
+git remote add origin <orgin link>
+git checkout -b Assig
+git add .
+git commit -m "...."
+git push origin Assig
