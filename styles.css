@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f889e;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px; 
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #1c86a0, #61aabd);
+    box-shadow: 0 6px 12px rgba(0,0 ,0,.175), 0 -6px 18px rgba(0,0 ,0,.125);
+}
+
+.weather{
+    display: none;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(0,0 ,0,.175), 0 -6px 18px rgba(0,0 ,0,.125) ;
+} 
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    color: #333;
+    padding: 14px 20px;
+    height: 60px;
+    border-radius: 50px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 24px;
+}
+
+.weather-icon {
+    width: 120px;
+    margin: 0 auto 20px;
+}
+
+.weather-icon img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.city {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 20px;
+    padding:2px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    padding-inline: 145px ;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 18px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
