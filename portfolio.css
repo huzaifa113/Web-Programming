@@ -1,0 +1,327 @@
+.profilePicSection
+{
+
+}
+
+body
+{
+    background: url("images/backgroundpicture.jpg");
+    background-color: (0,0,0,60%);
+    background-size: cover;
+}
+#changing {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fall-backward {
+    opacity: 0;
+    transform: translateY(80%);
+}
+
+.stand-from-front {
+    opacity: 1;
+    transform: translateY(0);
+}
+.GetTouchForm 
+{
+  flex-direction: column;
+  margin-left:10px;
+  justify-content: center;
+
+}
+.GetInTouchSection
+{
+  
+    display:flex;
+  width:100%;
+  margin-left: 5%;
+  
+}
+
+.GetInTouchSection .GLeftSection
+{
+  width:50%;
+  text-align: center;
+}
+
+
+.GetInTouchSection .GRightSection
+{
+  
+  margin-left: 16%;
+  border: 5px solid rgb(15, 13, 6);
+  background-size: cover;
+  padding-top: 2%;
+  padding-left: 2%;
+  background-color: #152238;
+  width: 300px;
+  display: inline;
+
+}
+
+input,textarea {
+  width: 70%;
+  color: white;
+  margin-top: 3%;
+  padding:10px;
+  background-color: transparent;
+  border:1px solid rgb(230, 227, 50);
+  border-radius: 5px;
+  margin-left: 35px;
+}
+.FLeftSide
+{
+  width:50%;
+  
+}
+.FRightSide
+{
+  display:flex;
+  justify-content:end;
+}
+.FRightSide .githublogo,.linkedinlogo
+{
+  margin-top:50px;
+ width : 100%;
+ justify-content: space-around;
+ height:10%;
+}
+footer
+{
+height:25%;
+}
+.BannerButton {
+  text-align: center;
+}
+
+.cvdownload img {
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.cvdownload, .watchVideo {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  width: auto;
+  font-weight: bold;
+  border: white;
+  border-radius: 5px;
+  margin: 10px;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration:solid;
+}
+
+.watchVideo img {
+  border: 10px #3fda18;
+  margin-left: 10px;
+  border-radius: 100px;
+}
+
+.cvdownload:hover, .watchVideo:hover {
+  background-color: #3fda18;
+}
+
+.watchvideo
+{
+
+}
+
+.cvdownload:hover, .watchvideo:hover {
+  background-color: rgb(150, 11, 96);
+}
+
+
+.BRightSide {
+  margin-top: 2%;
+  width: 60%;
+}
+ 
+.BannerButton
+{
+    border:10px;
+    border-color: aqua;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    
+}
+
+.BLeftSide {
+  width: 65%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+nav
+{
+    display:flex;
+    justify-content: space-around;
+   align-items: center;
+   height:30px;
+   background-color: #152238;
+   width:100%;
+   background-color: black;
+}
+nav ul
+{
+    display:flex;
+    justify-content: center;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover
+{
+  background-color: greenyellow;
+  a {
+    color: black;
+  }
+  border-radius: 10px;
+}
+
+nav li
+{
+    list-style: none;
+    margin :0 23px; 
+    padding: 10px;
+}
+.left,.right
+{
+    color:white;
+}
+.BannerButton span {
+    display: inline-block; /* Ensure the text stays on the same line as the icon */
+  }
+  .Text
+  {
+    width: 50%;
+    font: 5px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:25px;
+ 
+}
+.BannerButton img {
+    width: 20px; /* Adjust the width of the icon */
+    margin-right: 5px; /* Add some spacing between the icon and text */
+  }
+.BannerSection
+{
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bolded_Title
+{
+    color:limegreen;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:28px;
+    width:40%;
+
+}
+.BannerContent
+{
+
+display:flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.bolded_Title, .Text {
+    margin: 10px; /* Adjust the margin as needed */
+  }
+  .profilePicSection {
+    position: relative;
+    width: 80%;
+  }
+  
+  .profilePicSection img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    border-radius: 90%; /* Make the image circular */
+    margin-right: 40%;
+  }
+  
+  .hexagon-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .profilePicSection svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .profilePicSection:hover .hexagon-border {
+    stroke: limegreen;
+  }
+  .GetInTouchSection
+  {
+    color:white
+  }
+
+
+  .GetInTouchSection {
+    margin-top: 150px;
+  }
+
+
+#submitBtn {
+  width: 35%;
+  height: 35px;
+  font-weight: bolder;
+  font-size: large;
+  background-color: transparent;
+  border: 2px solid yellow;
+  color: yellow;margin-left: 73px;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+#submitBtn:hover {
+  color:rgb(151, 151, 41);
+}
+.figures {
+  margin-left: 7%;
+}
+
+
+
+
+.close-button {
+  background-color: #ff4444; /* Red color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ff0000; /* Darker red color on hover */
+}
+
+
+.sp1{
+  font-weight: bold;
+  font-size: large;
+  color: limegreen;
+}
