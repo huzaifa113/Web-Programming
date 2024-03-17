@@ -1,0 +1,20 @@
+body { 
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    font-family: 'Montserrat', 'sans-serif';
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+#clock { 
+    font-size: 9rem; /* Decreased font size for better fit */
+    font-weight: bold; /* Increased font weight for better visibility */
+    padding: 20px; /* Decreased padding for a tighter display */
+    border-radius: 10px; 
+    color: #fff; /* Dark text color */
+    background-color: #333; /* White background */
+    box-shadow: 0 6px 12px rgba(0,0 ,0,.175), 0 -6px 18px rgba(0,0 ,0,.125);
+}
